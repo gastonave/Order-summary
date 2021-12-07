@@ -5,50 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="main.js" defer>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.google.com/specimen/Red+Hat+Display">
   
-  <title>Frontend Mentor | Intro component with sign up form</title>
+  <title>Frontend Mentor | Order summary card</title>
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
 </head>
-	
 <body>
-	<div class="main">
-		<div class="info">
-			<h1>Learn to code by watching others</h1>
-			<p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  			but understanding how developers think is invaluable.</p>
+	<img class="bg-img" src="images/pattern-background-desktop.svg" alt="background image">
+	<section class="main">
+		<img class="dancer" src="images/illustration-hero.svg" alt="Person dancing">
+		<h1>Order Summary</h1>
+		<p class="info">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+		<div class="plan">
+			<img class="music" src="images/icon-music.svg" alt="Music note">
+			<p class="price"><span>Annual Plan</span><br>$59.99/year</p>
+			<button class="change">Change</button>
 		</div>
-		<div class="form-main">
-			<h2>Try it free 7 days <span>then $20/mo. thereafter</span></h2>
-			<form id="form">
-				<div>
-					<label for="first">First Name</label>
-					<input type="text" id="first" name="first">
-					<div class="error"></div>
-				</div>
-				<div>
-					<label for="last">Last Name</label>
-					<input type="text" id="last" name="last">
-					<div class="error"></div>
-				</div>
-				<div>
-					<label for="email">Email Address</label>
-					<input type="email" id="email" name="email">
-					<div class="error"></div>
-				</div>
-				<div>
-					<label for="pw">Password</label>
-					<input type="password" id="pw" name="pw">
-					<div class="error"></div>
-				</div>
-				<button id="btn" type="submit">Claim your free trial</button>
-				<p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-			</form>
+		<div class="pmt">
+			<button>Proceed to Payment</button>
 		</div>
-	</div>
+		<div class="cancel">
+			<button>Cancel Order</button>
+		</div>
+	</section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
 </body>
 </html>
